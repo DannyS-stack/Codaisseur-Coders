@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import moment from "moment";
 import {
@@ -24,7 +25,7 @@ export default function PostsFeed() {
         {posts.map((post) => {
           return (
             <div>
-              <h1>{post.title}</h1>
+              <Link to={`/post/${post.id}`}>{post.title}</Link>
               <p>{post.content}</p>
             </div>
           );
