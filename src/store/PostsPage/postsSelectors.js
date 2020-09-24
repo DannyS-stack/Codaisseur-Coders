@@ -1,5 +1,5 @@
-function selectPostAndComments(state) {
-  return state.postPage.loading === true
+export const selectPostAndComments = (state) => {
+  return state.postsPage.loading === true
     ? null
-    : { post: state.postPage.post, comments: state.postPage.comments };
-}
+    : { post: state.postsPage.post, comments: state.postsPage.comments };
+};

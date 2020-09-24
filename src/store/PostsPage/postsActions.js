@@ -12,7 +12,7 @@ export function postFullyFetched(action) {
 
 export function fetchPost(id) {
   return async function thunk(dispatch, getState) {
-    dispatch(startLoadingPost());
+    // dispatch(startLoadingPost());
 
     const [postResponse, commentsResponse] = await Promise.all([
       axios.get(`${API_URL}/posts/${id}`),
