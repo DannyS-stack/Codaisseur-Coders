@@ -1,5 +1,10 @@
 import React from "react";
+import PostsFeed from "../Components/PostsFeed";
 
 export default function HomePage() {
-  return <h1>Hello!</h1>;
+  return (
+    <div>
+      <PostsFeed />
+    </div>
+  );
 }
